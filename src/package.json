@@ -4,17 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "start": "vite",
-  "build": "vite build --base=/",  // Buradaki --base=/ doğru yapılandırma
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "preview": "vite preview"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build --base=/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^6.2.0"
   },
-  "author": "Soner Atalay <aribbonofblackk@gmail.com>", 
+  "author": "Soner Atalay <aribbonofblackk@gmail.com>",
   "dependencies": {
     "glob": "^11.0.1",
     "postcss-sort-media-queries": "^5.2.0",
