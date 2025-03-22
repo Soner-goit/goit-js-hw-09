@@ -4,14 +4,16 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
+// tek bir defineConfig kullanılıyor
 export default defineConfig(({ command }) => {
   return {
-    define: {
-      [command === 'serve' ? 'global' : '_global']: {},
-    },
     root: 'src',
+    server: {
+      port: 5173, 
+    },
     build: {
       sourcemap: true,
+      outDir: '../dist', // Çıktıyı proje kökünde 'dist' klasörüne alır
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -34,8 +36,10 @@ export default defineConfig(({ command }) => {
           },
         },
       },
-      outDir: '../dist',
       emptyOutDir: true,
+    },
+    define: {
+      [command === 'serve' ? 'global' : '_global']: {},
     },
     plugins: [
       injectHTML(),
