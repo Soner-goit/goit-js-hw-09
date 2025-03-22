@@ -4,14 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "start": "vite",
-  "build": "vite build --base=/",  // Buradaki --base=/ doğru yapılandırma
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "preview": "vite preview"
-}
-
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build --base=/",  // Buradaki --base=/ doğru yapılandırma
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "preview": "vite preview"
+  },
   "devDependencies": {
     "vite": "^6.2.0"
   },
