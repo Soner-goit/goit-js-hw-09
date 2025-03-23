@@ -12,9 +12,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^6.2.0"
   },
-  "author": "Soner Atalay <aribbonofblackk@gmail.com>", 
+  "author": "Soner Atalay <aribbonofblackk@gmail.com>",
   "dependencies": {
     "glob": "^11.0.1",
     "postcss-sort-media-queries": "^5.2.0",
