@@ -23,7 +23,6 @@ Sayfanın en sonuna gidin, `«Workflow permissions»` bölümünde `«Read and w
 Artık depo şablonu dosyası ve klasör yapısına sahip kişisel bir proje deponuz var. Daha sonra diğer kişisel depolarla yaptığınız gibi onunla çalışın.
 Bilgisayarınıza klonlayın, kod yazın, taahhütlerde bulunun ve bunları GitHub'a gönderin.
 
-
 ## İş için hazırlanma
 
 1. Bilgisayarınızda Node.js'nin LTS sürümünün yüklü olduğundan emin olun. Gerekirse [Download and install](https://nodejs.org/en/).
@@ -36,7 +35,6 @@ Bilgisayarınıza klonlayın, kod yazın, taahhütlerde bulunun ve bunları GitH
 - Sayfa bileşeni biçimlendirme dosyaları `rc/partials` klasöründe bulunmalı ve `index.html` dosyasına aktarılmalıdır. Örneğin, başlık biçimlendirme dosyası `header.html` `partials` klasöründe oluşturulur ve `index.html` dosyasına aktarılır.
 - Stil dosyaları `rc/css` klasöründe bulunmalı ve sayfaların HTML dosyalarına aktarılmalıdır. Örneğin, `index.html` için stil dosyası `index.css` olarak adlandırılır.
 - Görüntüleri `src/img` klasörüne eklersiniz. Oluşturucu bunları optimize eder, ancak yalnızca projenin üretim sürümü dağıtıldığında. Tüm bunlar bulutta gerçekleşir, böylece bilgisayarınıza yük olmaz, çünkü zayıf makinelerde uzun zaman alabilir.
-
 
 ## Dağıtım
 
@@ -60,7 +58,6 @@ Son işlemin dağıtım durumu, tanımlayıcısının yanındaki simge ile göst
 
 Durum hakkında daha ayrıntılı bilgi, simgeye tıklayarak ve açılan pencerede `Details` bağlantısına tıklayarak görüntülenebilir.
 
-
 ![Deployment status](./assets/deploy-status.png)
 
 ### Canlı sayfa
@@ -69,16 +66,15 @@ Bir süre sonra, genellikle birkaç dakika, canlı sayfa depo ayarlarındaki `Se
 Örneğin, bu depo için canlı sürümün bağlantısı şöyledir
 [https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
 
-
 Boş bir sayfa açılırsa, `Console` sekmesinde projenin CSS ve JS dosyalarının yanlış yollarıyla ilgili herhangi bir hata olmadığından emin olun (**404**). Büyük olasılıkla `package.json` dosyasında `build` komutu için `--base` bayrağının yanlış bir değeri vardır.
 
 ## Nasıl çalışır
 
 ![How it works](./assets/how-it-works.png)
 
-1. GitHub deposuna yapılan her `main` gönderim sonrasında `.github/workflows/deploy.yml` 
-dosyasında özel bir komut dosyası (GitHub Action) çalıştırılır.
-2. Depo dosyalarının tümü sunucuya kopyalanır, burada proje başlatılır ve dağıtımdan önce 
-kod kalitesi kontrolü ve derleme yapılır.
-3. Eğer tüm adımlar başarılı bir şekilde tamamlanırsa, proje dosyalarının üretime hazır sürümü `gh-pages` 
-dalına gönderilir. Aksi takdirde, komut dosyası çalıştırma günlüğünde sorunun ne olduğu belirtilir.
+1. GitHub deposuna yapılan her `main` gönderim sonrasında `.github/workflows/deploy.yml`
+   dosyasında özel bir komut dosyası (GitHub Action) çalıştırılır.
+2. Depo dosyalarının tümü sunucuya kopyalanır, burada proje başlatılır ve dağıtımdan önce
+   kod kalitesi kontrolü ve derleme yapılır.
+3. Eğer tüm adımlar başarılı bir şekilde tamamlanırsa, proje dosyalarının üretime hazır sürümü `gh-pages`
+   dalına gönderilir. Aksi takdirde, komut dosyası çalıştırma günlüğünde sorunun ne olduğu belirtilir.

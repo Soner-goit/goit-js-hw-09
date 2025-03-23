@@ -50,7 +50,7 @@ przesyłaj je do GitHub.
   `header.html` należy utworzyć w folderze `partials` i zaimportować do `index.html`.
 - Pliki stylów powinny być umieszczone w folderze `src/css` i zaimportowane do plików HTML
   stron. Na przykład, dla `index.html` plik stylów nazywa się `index.css`.
-- Obrazy należy dodawać do folderu `src/img`. Konstruktor zoptymalizuje je, ale dopiero po 
+- Obrazy należy dodawać do folderu `src/img`. Konstruktor zoptymalizuje je, ale dopiero po
   wdrożeniu produkcyjnej wersji projektu. Wszystko to dzieje się w chmurze, aby nie
   obciążać Twojego komputera, ponieważ na słabych komputerach może to zająć dużo czasu.
 
@@ -58,7 +58,7 @@ przesyłaj je do GitHub.
 
 Wersja produkcyjna projektu zostanie automatycznie zbudowana i wdrożona na GitHub
 Pages, w gałęzi `gh-pages`, za każdym razem, gdy gałąź `main` zostanie zaktualizowana.
-Na przykład po bezpośrednim przesłaniu lub zaakceptowaniu pull request. Aby to zrobić, 
+Na przykład po bezpośrednim przesłaniu lub zaakceptowaniu pull request. Aby to zrobić,
 należy w pliku `package.json` zmienić wartość flagi `--base=/<REPO>/`, dla polecenia `build`,
 zastępując `<REPO>` nazwą repozytorium i wysłać zmiany do GitHub.
 
@@ -80,7 +80,7 @@ Status wdrożenia ostatniego zatwierdzenia jest wyświetlany za pomocą ikony ob
 - **Zielony** - wdrożenie zakończyło się pomyślnie.
 - **Czerwony** - wystąpił błąd podczas lintingu, budowania lub wdrażania.
 
-Bardziej szczegółowe informacje na temat statusu można wyświetlić, klikając ikonę, 
+Bardziej szczegółowe informacje na temat statusu można wyświetlić, klikając ikonę,
 a następnie link `Details` znajdujący się w rozwijanym oknie.
 
 ![Deployment status](./assets/deploy-status.png)
@@ -88,7 +88,7 @@ a następnie link `Details` znajdujący się w rozwijanym oknie.
 ### Strona na żywo
 
 Po pewnym czasie, zwykle kilku minutach, strona na żywo może być wyświetlona
-pod adresem określonym w zakładce `Settings` > `Pages` w ustawieniach repozytorium. 
+pod adresem określonym w zakładce `Settings` > `Pages` w ustawieniach repozytorium.
 Na przykład, oto link do wersji live dla tego repozytorium:
 
 [https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
@@ -109,4 +109,4 @@ dla polecenia `build` w pliku `package.json`.
 3. Jeśli wszystkie kroki zakończą się powodzeniem, zmontowana wersja produkcyjna
    plików projektu zostanie wysłana do gałęzi `gh-pages`. W przeciwnym razie
    w logu wykonania skryptu pojawi się informacja o problemie.
-...
+   ...

@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
   return {
     root: 'src',
     server: {
-      port: 5173, 
+      port: 5173,
     },
     build: {
       sourcemap: true,
